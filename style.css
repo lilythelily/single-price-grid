@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: var(--light-gray);
+  color: var(--grayish-blue);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: var(--cyan);
+  margin: 1.25rem 0 1.5rem 0;
+}
+
+h2 {
+  color: var(--bright-yellow);
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 0.625rem;
+}
+
+.gain {
+  line-height: 1.6;
+}
+
+article {
+  background-color: white;
+  padding: 1.5rem 3.75rem 2rem 2rem;
+  border-radius: 0.625rem 0.625rem 0 0;
+}
+
+.monthly {
+  background-color: var(--cyan);
+}
+
+.why {
+  background-color: hsla(179, 62%, 43%, 0.8);
+}
+
+h3 {
+  color: var(--light-gray);
+  font-size: 1.125rem;
+}
+
+span {
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+}
+
+.price {
+  color: hsla(204, 43%, 93%, 0.6);
+  font-size: 0.9375rem;
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+}
+
+.description {
+  color: hsla(204, 43%, 93%, 0.8);
+  font-size: 0.9375rem;
+}
+
+.description2 {
+  color: hsla(204, 43%, 93%, 0.75);
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+button {
+  border: none;
+  background-color: var(--bright-yellow);
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Karla", sans-serif;
+  font-size: 1.0625rem;
+  font-weight: 700;
+  padding: 0.875rem;
+  border-radius: 0.375rem;
+  margin-top: 1rem;
+  box-shadow: 0.0625rem 0.5rem 0.625rem 0.125rem hsla(179, 63%, 35%, 0.8);
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: hsla(71, 73%, 54%, 0.9);
+}
+
+.monthly {
+  display: flex;
+  flex-direction: column;
+  padding: 2.25rem 2rem;
+  gap: 1rem;
+  border-radius: 0 0 0 0.625rem;
+}
+
+.why {
+  display: flex;
+  flex-direction: column;
+  padding: 2.25rem 2rem;
+  gap: 1rem;
+  border-radius: 0 0 0.625rem 0;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+footer {
+  margin-top: 24px;
+  color: hsla(218, 22%, 67%, 0.5);
+}
+
+main {
+  width: 40rem;
+  margin: 2.5rem auto;
+  border-radius: 0.625rem;
+  box-shadow: 0.0625rem 0.5rem 0.75rem 0.1875rem hsla(180, 40%, 45%, 0.2);
+}
+
+@media only screen and (max-width: 650px) {
+  article {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+
+  .monthly {
+    border-radius: 0;
+  }
+
+  .why {
+    border-radius: 0 0 0.5rem 0.5rem;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  main {
+    width: 80vw;
+    margin: 2.5rem auto;
+  }
+}
